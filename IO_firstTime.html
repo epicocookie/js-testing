@@ -1,0 +1,13 @@
+// Write code below 💖
+let mass = parseFloat(window.prompt("Fill your mass: "));
+let height = parseFloat(window.prompt("Fill your height: "));
+
+if ( !Number.isFinite(mass) || !Number.isFinite(height) || height<0 ) {
+  console.log("Please enter a valid number fr fr: ");
+}
+
+else {
+  const bmi = mass/(height**2);
+  console.log(`Your BMI is ${bmi.toFixed(1)}`);
+}
+
